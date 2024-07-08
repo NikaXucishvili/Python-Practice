@@ -6,10 +6,14 @@ def my_function():
 	message = "Hello everyone"
 	print(message)
 my_function()
-print(message)
 
-print("Enter your name:")
-name = input()
-print(name)
+
+name = input("Enter your name:\n")
+print("Your name is " + name)
+
+age = input("Enter your age:\n")
+print("You are " + age + "years old")
+age2 = int(age) + 50
+print("In 50 years, you will be " + str(age2) + "years old") 
 
 
