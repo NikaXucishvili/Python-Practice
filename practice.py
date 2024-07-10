@@ -90,6 +90,7 @@ for i in range(counter):
 
 ### Tuples
 
-heroes = ("The Batman", "Spider-Man", "The Joker", "Wonder Woman")
-type(heroes)
-print(heroes)
+heroes_tuples = ("The Batman", "Spider-Man", "The Joker", "Wonder Woman")
+heroes_list = ["The Batman", "Spdier-Man", "The Joker", "Wonder Woman")
+
+
