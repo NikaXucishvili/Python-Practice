@@ -100,3 +100,6 @@ print(len(heroes))"""
 import os
 
 print(os.getcwd()) ##get current working directory 
+
+os.rename("first.txt", "second.txt")
+
