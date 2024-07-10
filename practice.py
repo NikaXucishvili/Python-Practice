@@ -105,7 +105,7 @@ os.rename("first.txt", "second.txt")"""
 
 os.system('ls')
 
-print("Your current working directory is: " + os.getcwd() + "\n\n)
+print("Your current working directory is: " + os.getcwd() + "\n\n")
 
 print("The contents of this directory are: ")
 os.system('ls')
