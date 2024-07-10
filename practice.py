@@ -70,7 +70,7 @@ else:
 
 ###for loops
 
-foods = ["pizza", "tacos", "hamburger", "xinkali"]
+"""foods = ["pizza", "tacos", "hamburger", "xinkali"]
 for f in foods:
 	print(f)
 
@@ -85,4 +85,11 @@ counter = random.randint(5, 10)
 number = 1
 for i in range(counter):
 	print(number)
-	number += 1
+	number += 1"""
+
+
+### Tuples
+
+heroes = ("The Batman", "Spider-Man", "The Joker", "Wonder Woman")
+type(heroes)
+print(heroes)
