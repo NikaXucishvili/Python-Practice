@@ -99,7 +99,13 @@ print(len(heroes))"""
 
 import os
 
-print(os.getcwd()) ##get current working directory 
+"""print(os.getcwd()) ##get current working directory 
 
-os.rename("first.txt", "second.txt")
+os.rename("first.txt", "second.txt")"""
 
+os.system('ls')
+
+print("Your current working directory is: " + os.getcwd() + "\n\n)
+
+print("The contents of this directory are: ")
+os.system('ls')
