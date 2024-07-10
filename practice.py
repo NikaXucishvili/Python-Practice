@@ -51,8 +51,15 @@ print("This will always print.")"""
 
 ###Password Checker ################
 
-import getpass
+"""import getpass
 
 pswd = getpass.getpass('Password:')
 
-print(pswd)
+print(pswd)"""
+
+
+my_num = 1
+
+while my_num <= 10:
+	print(my_num)
+	my_num = my_num + 1
