@@ -90,7 +90,13 @@ for i in range(counter):
 
 ### Tuples
 
-heroes_tuples = ("The Batman", "Spider-Man", "The Joker", "Wonder Woman")
-heroes_list = ["The Batman", "Spdier-Man", "The Joker", "Wonder Woman")
+"""heroes = ("The Batman", "Spider-Man", "The Joker", "Wonder Woman")
+for h in heroes:
+	print(h)
+print(len(heroes))"""
 
+## OS Operating system
 
+import os
+
+print(os.getcwd()) ##get current working directory 
