@@ -59,10 +59,17 @@ print(pswd)"""
 
 #### While loop ########
 
-my_num = 1
+"""my_num = 1
 
 while my_num <= 10:
 	print(my_num)
 	my_num = my_num + 1
 else:
-	print(my_num)
+	print(my_num)"""
+
+
+###for loops
+
+foods = ["pizza", "tacos", "hamburger", "xinkali"]
+for f in foods:
+	print(f)
