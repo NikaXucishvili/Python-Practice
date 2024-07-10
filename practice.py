@@ -73,3 +73,7 @@ else:
 foods = ["pizza", "tacos", "hamburger", "xinkali"]
 for f in foods:
 	print(f)
+
+sentence = "Python is awesome!"
+for c in sentence:
+	print(c)
