@@ -77,3 +77,12 @@ for f in foods:
 sentence = "Python is awesome!"
 for c in sentence:
 	print(c)
+
+import random
+
+counter = random.randint(5, 10)
+
+number = 1
+for i in range(counter):
+	print(number)
+	number += 1
