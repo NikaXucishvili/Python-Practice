@@ -103,9 +103,18 @@ import os
 
 os.rename("first.txt", "second.txt")"""
 
-os.system('ls')
+"""os.system('ls')
 
 print("Your current working directory is: " + os.getcwd() + "\n\n")
 
 print("The contents of this directory are: ")
-os.system('ls')
+os.system('ls')"""
+
+file = "myfile.txt"
+
+if os.path.isfile(file):
+	print("The file exists,")
+else:
+	print("The file doesnt exist")
+
+
