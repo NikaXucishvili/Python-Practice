@@ -110,11 +110,11 @@ print("Your current working directory is: " + os.getcwd() + "\n\n")
 print("The contents of this directory are: ")
 os.system('ls')"""
 
-file = "myfile.txt"
+file = input("Enter a file name: ")
 
 if os.path.isfile(file):
 	print("The file exists,")
 else:
 	print("The file doesnt exist")
-
-
+	print("creating it,,,")
+	os.system('touch {}'.format(file))
