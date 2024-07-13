@@ -141,10 +141,19 @@ else:
 
 ## Handling Exceptions
 
-foods = ("Lasagna", "Ravioli", "Pizza")
+"""foods = ("Lasagna", "Ravioli", "Pizza")
 
 try:
     foods[1] = "Macaroni"
 except:
-    print("There was an error.")
+    print("There was an error.")"""
+
+myfile = "file.txt"
+try:
+    file = open(myfile, "r")
+except FileNotFoundError as e:
+	print("The file was not found.")
+	print(e)
+for line in file:
+	print(line)
 
