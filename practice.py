@@ -126,13 +126,16 @@ import subprocess
 
 svc = "sshd"
 
-service_check = subprocess.call(["ps", "-C", svc])
-
+check_cmd = ["ps",
+	    "-C",
+	    svc]
+	 
+service_check = subprocess.call(check_cmd)
 if service_check == 0:
 	print("its running")
 else:
 	print("its not running")
 	print("Starting it...")
 	subprocess.call(["systemctl", "start", "sshd"])
-	subprocess.call(["ps", "-C", svc])
+	subprocess.call(check_cmd)
 
