@@ -122,7 +122,7 @@ else:
 
 ##### subprocess
 
-import subprocess
+"""import subprocess
 
 svc = "sshd"
 
@@ -137,5 +137,14 @@ else:
 	print("its not running")
 	print("Starting it...")
 	subprocess.call(["systemctl", "start", "sshd"])
-	subprocess.call(check_cmd)
+	subprocess.call(check_cmd)"""
+
+## Handling Exceptions
+
+foods = ("Lasagna", "Ravioli", "Pizza")
+
+try:
+    foods[1] = "Macaroni"
+except:
+    print("There was an error.")
 
