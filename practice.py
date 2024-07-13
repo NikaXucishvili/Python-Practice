@@ -97,18 +97,18 @@ print(len(heroes))"""
 
 ## OS Operating system
 
-import os
+"""import os
 
-"""print(os.getcwd()) ##get current working directory 
+print(os.getcwd()) ##get current working directory 
 
-os.rename("first.txt", "second.txt")"""
+os.rename("first.txt", "second.txt")
 
-"""os.system('ls')
+os.system('ls')
 
 print("Your current working directory is: " + os.getcwd() + "\n\n")
 
 print("The contents of this directory are: ")
-os.system('ls')"""
+os.system('ls')
 
 file = input("Enter a file name: ")
 
@@ -117,4 +117,22 @@ if os.path.isfile(file):
 else:
 	print("The file doesnt exist")
 	print("creating it,,,")
-	os.system('touch {}'.format(file))
+	os.system('touch {}'.format(file))"""
+
+
+##### subprocess
+
+import subprocess
+
+svc = "sshd"
+
+service_check = subprocess.call(["ps", "-C", svc])
+
+if service_check == 0:
+	print("its running")
+else:
+	print("its not running")
+	print("Starting it...")
+	subprocess.call(["systemctl", "start", "sshd"])
+	subprocess.call(["ps", "-C", svc])
+
