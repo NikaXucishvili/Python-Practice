@@ -16,9 +16,9 @@ my_function()
 name = input("Enter your name:\n")
 print("Your name is " + name)
 
-age = input("Enter your age:\n")
-print("You are " + age + "years old")
-age2 = int(age) + 50
+asaki = input("Enter your age:\n")
+print("You are " + asaki + "years old")
+age2 = int(asaki) + 50
 print("In 50 years, you will be " + str(age2) + "years old " + "Probably Dead..") 
 
 
@@ -36,7 +36,7 @@ print("This will always print.")
 
 
 ######## age adult older or not even adult 
- age = input("Please enter your age: ")
+""" age = input("Please enter your age: ")
 
 try:
     age = int(age)  # Convert age input to an integer
@@ -49,7 +49,7 @@ try:
 except ValueError:
     print("Invalid input. Please enter a valid age.")
 
-print("This will always print.")
+print("This will always print.")"""
 
 
 ###Password Checker ################
