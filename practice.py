@@ -3,74 +3,77 @@
 
 ### Functions 
 
-"""def my_function():
-	This is just some message
+def my_function():
+	"""This is just some message"""
 	global message
 	message = "Hello everyone"
 	print(message)
-my_function()"""
+my_function()
 
 
 #Enter your name + age
 
-"""name = input("Enter your name:\n")
+name = input("Enter your name:\n")
 print("Your name is " + name)
 
 age = input("Enter your age:\n")
 print("You are " + age + "years old")
 age2 = int(age) + 50
-print("In 50 years, you will be " + str(age2) + "years old " + "Probably Dead..") """
+print("In 50 years, you will be " + str(age2) + "years old " + "Probably Dead..") 
 
 
 
 ### Enter a number between 1 and 10: #####
 
-"""number = input("Please Enter a number between 1 and 10: ")
+number = input("Please Enter a number between 1 and 10: ")
 
 if int(number) <= 10:
    print("A valid number was entered")
 else:
     print("An invalid number was entered.")    
-print("This will always print.")"""
+print("This will always print.")
 
 
 
 ######## age adult older or not even adult 
+ age = input("Please enter your age: ")
 
+try:
+    age = int(age)  # Convert age input to an integer
+    if age >= 50:
+        print("You are 50 or older.")
+    elif age >= 18:
+        print("You are an adult.")
+    else:
+        print("You are not even an adult.")
+except ValueError:
+    print("Invalid input. Please enter a valid age.")
 
-""" age = input("Please enter your age: ")
-if int(age) >= 50:
-	print("You are 50 or older.")
-elif int(age) >= 18:
-	print("You are an adult.")
-else:
-	print("You are not even an adult.")
-
-print("This will always print.")""" 
+print("This will always print.")
 
 
 ###Password Checker ################
 
-"""import getpass
+import getpass
 
 pswd = getpass.getpass('Password:')
 
-print(pswd)"""
+print(pswd)
 
 #### While loop ########
 
-"""my_num = 1
+my_num = 1
 
 while my_num <= 10:
 	print(my_num)
 	my_num = my_num + 1
 else:
-	print(my_num)"""
+	print(my_num)
 
 
 ###for loops
 
-"""foods = ["pizza", "tacos", "hamburger", "xinkali"]
+foods = ["pizza", "tacos", "hamburger", "xinkali"]
 for f in foods:
 	print(f)
 
@@ -85,19 +88,19 @@ counter = random.randint(5, 10)
 number = 1
 for i in range(counter):
 	print(number)
-	number += 1"""
+	number += 1
 
 
 ### Tuples
 
-"""heroes = ("The Batman", "Spider-Man", "The Joker", "Wonder Woman")
+heroes = ("The Batman", "Spider-Man", "The Joker", "Wonder Woman")
 for h in heroes:
 	print(h)
-print(len(heroes))"""
+print(len(heroes))
 
 ## OS Operating system
 
-"""import os
+import os
 
 print(os.getcwd()) ##get current working directory 
 
@@ -117,12 +120,12 @@ if os.path.isfile(file):
 else:
 	print("The file doesnt exist")
 	print("creating it,,,")
-	os.system('touch {}'.format(file))"""
+	os.system('touch {}'.format(file))
 
 
 ##### subprocess
 
-"""import subprocess
+import subprocess
 
 svc = "sshd"
 
@@ -137,16 +140,16 @@ else:
 	print("its not running")
 	print("Starting it...")
 	subprocess.call(["systemctl", "start", "sshd"])
-	subprocess.call(check_cmd)"""
+	subprocess.call(check_cmd)
 
 ## Handling Exceptions
 
-"""foods = ("Lasagna", "Ravioli", "Pizza")
+foods = ("Lasagna", "Ravioli", "Pizza")
 
 try:
     foods[1] = "Macaroni"
 except:
-    print("There was an error.")"""
+    print("There was an error.")
 
 myfile = "file.txt"
 try:
