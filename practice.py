@@ -165,3 +165,5 @@ for m in movies:
 	file.write(m + "\n")
 file.close()
 
+ricxvebi = ["0", "1", "2", "3", "4", "5"]
+print(ricxvebi)
