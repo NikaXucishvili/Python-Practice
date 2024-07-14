@@ -104,7 +104,7 @@ import os
 
 print(os.getcwd()) ##get current working directory 
 
-os.rename("first.txt", "second.txt")
+"""os.rename("first.txt", "second.txt")"""
 
 os.system('ls')
 
@@ -165,5 +165,7 @@ for m in movies:
 	file.write(m + "\n")
 file.close()
 
-ricxvebi = ["0", "1", "2", "3", "4", "5"]
-print(ricxvebi)
+ricxvebi = [0, 1, 2, 3, 4, 5]
+
+for i in ricxvebi:
+	print(i)
