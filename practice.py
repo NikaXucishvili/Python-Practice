@@ -150,10 +150,15 @@ except:
 
 myfile = "file.txt"
 try:
-    file = open(myfile, "r")
+    file = open(myfile, "a")
 except FileNotFoundError as e:
 	print("The file was not found.")
 	print(e)
-for line in file:
-	print(line)
+	exit(1)
+
+movies = ["The Matrix", "The Lord of the Rings", "The Avengers"]
+
+for m in movies:
+	file.write(m + "\n")
+file.close()
 
