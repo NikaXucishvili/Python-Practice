@@ -3,17 +3,17 @@
 
 ### Functions 
 
-def my_function():
-	"""This is just some message"""
+"""def my_function():
+	This is just some message
 	global message
 	message = "Hello everyone"
 	print(message)
-my_function()
+my_function()"""
 
 
 #Enter your name + age
 
-name = input("Enter your name:\n")
+"""name = input("Enter your name:\n")
 print("Your name is " + name)
 
 asaki = input("Enter your age:\n")
@@ -21,11 +21,11 @@ print("You are " + asaki + "years old")
 age2 = int(asaki) + 50
 print("In 50 years, you will be " + str(age2) + "years old " + "Probably Dead..") 
 
-
+"""
 
 ### Enter a number between 1 and 10: #####
 
-number = input("Please Enter a number between 1 and 10: ")
+"""number = input("Please Enter a number between 1 and 10: ")
 
 if int(number) <= 10:
    print("A valid number was entered")
@@ -33,7 +33,7 @@ else:
     print("An invalid number was entered.")    
 print("This will always print.")
 
-
+"""
 
 ######## age adult older or not even adult 
 """ age = input("Please enter your age: ")
@@ -54,7 +54,7 @@ print("This will always print.")"""
 
 ###Password Checker ################
 
-import getpass
+"""import getpass
 
 pswd = getpass.getpass('Password:')
 
@@ -69,11 +69,11 @@ while my_num <= 10:
 	my_num = my_num + 1
 else:
 	print(my_num)
-
+"""
 
 ###for loops
 
-foods = ["pizza", "tacos", "hamburger", "xinkali"]
+"""foods = ["pizza", "tacos", "hamburger", "xinkali"]
 for f in foods:
 	print(f)
 
@@ -89,23 +89,22 @@ number = 1
 for i in range(counter):
 	print(number)
 	number += 1
-
+"""
 
 ### Tuples
 
-heroes = ("The Batman", "Spider-Man", "The Joker", "Wonder Woman")
+"""heroes = ("The Batman", "Spider-Man", "The Joker", "Wonder Woman")
 for h in heroes:
 	print(h)
-print(len(heroes))
+print(len(heroes))"""
 
 ## OS Operating system
 
-import os
+"""import os
 
 print(os.getcwd()) ##get current working directory 
 
-"""os.rename("first.txt", "second.txt")"""
-
+###os.rename("first.txt", "second.txt")
 os.system('ls')
 
 print("Your current working directory is: " + os.getcwd() + "\n\n")
@@ -122,10 +121,10 @@ else:
 	print("creating it,,,")
 	os.system('touch {}'.format(file))
 
-
+"""
 ##### subprocess
 
-import subprocess
+"""import subprocess
 
 svc = "sshd"
 
@@ -168,4 +167,7 @@ file.close()
 ricxvebi = [0, 1, 2, 3, 4, 5]
 
 for i in ricxvebi:
-	print(i)
+	print(i)"""
+
+ricxvi = input("sheivyanet ricxvi ")
+print("Sheni sheyvanili cifria " + ricxvi) 
