@@ -169,5 +169,12 @@ ricxvebi = [0, 1, 2, 3, 4, 5]
 for i in ricxvebi:
 	print(i)"""
 
-ricxvi = input("sheiyvane cifri")
-print("Shen sheiyvane cifri" + ricxvi)
+while True:
+	ricxvi = input("Enter a number: ")
+	ricxvi_int = int(ricxvi)
+
+	if ricxvi_int % 2 ==0:
+		print(f"{ricxvi_int} is even.")
+		break
+	else:
+		print(f"{ricxvi_int} is odd. Please enter an even number.")
