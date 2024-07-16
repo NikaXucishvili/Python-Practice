@@ -169,5 +169,5 @@ ricxvebi = [0, 1, 2, 3, 4, 5]
 for i in ricxvebi:
 	print(i)"""
 
-ricxvi = input("sheivyanet ricxvi ")
-print("Sheni sheyvanili cifria " + ricxvi) 
+ricxvi = input("sheiyvane cifri")
+print("Shen sheiyvane cifri" + ricxvi)
