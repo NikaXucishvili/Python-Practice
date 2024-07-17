@@ -169,7 +169,7 @@ ricxvebi = [0, 1, 2, 3, 4, 5]
 for i in ricxvebi:
 	print(i)"""
 
-while True:
+"""while True:
 	ricxvi = input("Enter a number: ")
 	ricxvi_int = int(ricxvi)
 
@@ -177,6 +177,50 @@ while True:
 		print(f"{ricxvi_int} is even.")
 		break
 	else:
-		print(f"{ricxvi_int} is odd. Please enter an even number.")
-	if ricxvi_int > 10:
-		print("sheiyvane 10 cifrze dabali ")
+		print(f"{ricxvi_int} is odd. Please enter an even number.")"""
+
+# Function to add two numbers
+def add(x, y):
+    return x + y
+
+# Function to subtract two numbers
+def subtract(x, y):
+    return x - y
+
+# Function to multiply two numbers
+def multiply(x, y):
+    return x * y
+
+# Function to divide two numbers
+def divide(x, y):
+    if y == 0:
+        return "Error! Division by zero."
+    else:
+        return x / y
+
+# Main function to take input from the user
+def main():
+    print("Select operation:")
+    print("1. Add")
+    print("2. Subtract")
+    print("3. Multiply")
+    print("4. Divide")
+
+    choice = input("Enter choice (1/2/3/4): ")
+
+    num1 = float(input("Enter first number: "))
+    num2 = float(input("Enter second number: "))
+
+    if choice == '1':
+        print(num1, "+", num2, "=", add(num1, num2))
+    elif choice == '2':
+        print(num1, "-", num2, "=", subtract(num1, num2))
+    elif choice == '3':
+        print(num1, "*", num2, "=", multiply(num1, num2))
+    elif choice == '4':
+        print(num1, "/", num2, "=", divide(num1, num2))
+    else:
+        print("Invalid input")
+
+if __name__ == "__main__":
+    main()
