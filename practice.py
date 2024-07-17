@@ -178,3 +178,5 @@ while True:
 		break
 	else:
 		print(f"{ricxvi_int} is odd. Please enter an even number.")
+	if ricxvi_int > 10:
+		print("sheiyvane 10 cifrze dabali ")
