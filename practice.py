@@ -179,7 +179,9 @@ for i in ricxvebi:
 	else:
 		print(f"{ricxvi_int} is odd. Please enter an even number.")"""
 
+
 # Function to add two numbers
+"""
 def add(x, y):
     return x + y
 
@@ -224,3 +226,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+"""
+
+
