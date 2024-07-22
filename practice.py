@@ -229,3 +229,14 @@ if __name__ == "__main__":
 """
 
 
+while True:
+    elene = input("არის ელენე ჭკვიანი?  ")
+    saxeli = str(elene)
+    
+    if saxeli == "კი":
+        print("არასწორია თავიდან სცადე")
+        print("")  # Add an empty line
+    
+    elif saxeli == "არა":
+        print("ყოჩაღ პასუხი სწორია")
+        break  # Exit the loop if password is correct
