@@ -229,14 +229,12 @@ if __name__ == "__main__":
 """
 
 
-while True:
-    elene = input("არის ელენე ჭკვიანი?  ")
-    saxeli = str(elene)
-    
-    if saxeli == "კი":
-        print("არასწორია თავიდან სცადე")
-        print("")  # Add an empty line
-    
-    elif saxeli == "არა":
-        print("ყოჩაღ პასუხი სწორია")
-        break  # Exit the loop if password is correct
+from flask import Flask
+app = Flask(__name__)
+
+@app.route("/")
+def message():
+    return "<h1>Python is awesome!</h1>"
+	   "<button>Click here </button>"
+
+app.run()
