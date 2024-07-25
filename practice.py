@@ -229,7 +229,8 @@ if __name__ == "__main__":
 """
 
 
-from flask import Flask, render_template
+###flask
+"""from flask import Flask, render_template
 app = Flask(__name__)
 
 @app.route("/")
@@ -237,3 +238,19 @@ def html_page():
     return render_template('site.html')
 
 app.run(debug=True)
+"""
+
+
+class GameCharacter:
+    def __init__(self, name, life):
+        self.name = name
+        self.life = life
+
+player1 = GameCharacter("roger", 100)
+player2 = GameCharacter("betty", 100)
+
+print(player1.name)
+print(player1.life)
+
+print(player2.name)
+print(player2.life)
