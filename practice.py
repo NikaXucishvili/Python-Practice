@@ -245,12 +245,25 @@ class GameCharacter:
     def __init__(self, name, life):
         self.name = name
         self.life = life
+    
+    def attack(self):
+        print(self.name + " kicks the enemy.")
 
+class GameEnemy:
+    def __init__(self, name, life):
+        self.name = name
+        self.life = life
+    
+    def attack(self):
+        print(self.name + " attacks the heroes!")
+
+# Instantiate game characters and enemies
 player1 = GameCharacter("roger", 100)
 player2 = GameCharacter("betty", 100)
+enemy1 = GameEnemy("Bill", 150)
+enemy2 = GameEnemy("Bob", 150)
 
-print(player1.name)
-print(player1.life)
+# Example usage
+player1.attack()
+enemy1.life -= 50
 
-print(player2.name)
-print(player2.life)
