@@ -240,7 +240,6 @@ def html_page():
 app.run(debug=True)
 """
 
-
 class GameCharacter:
     def __init__(self, name, life):
         self.name = name
@@ -248,6 +247,13 @@ class GameCharacter:
     
     def attack(self):
         print(self.name + " kicks the enemy.")
+    
+    def life_check(self):
+        if self.life <= 0:
+            print(self.name + " was defeated!")
+        else:
+            print(self.name + " is still in the fight.")
+
 
 class GameEnemy:
     def __init__(self, name, life):
@@ -256,18 +262,27 @@ class GameEnemy:
     
     def attack(self):
         print(self.name + " attacks the heroes!")
+    
+    def life_check(self):
+        if self.life <= 0:
+            print(self.name + " was defeated!")
+        else:
+            print(self.name + " is still in the fight.")
 
 # Instantiate game characters and enemies
-player1 = GameCharacter("roger", 100)
-player2 = GameCharacter("betty", 100)
+player1 = GameCharacter("Roger", 100)
+player2 = GameCharacter("Betty", 100)
 enemy1 = GameEnemy("Bill", 150)
 enemy2 = GameEnemy("Bob", 150)
 
 # Example usage
 player1.attack()
 enemy1.life -= 50
+enemy1.life_check()  # Check enemy1's life status
 print("The enemy takes 50 damage, and has " + str(enemy1.life) + " life remaining.")
 
 player2.attack()
 enemy2.life -= 70
+enemy2.life_check()  # Check enemy2's life status
 print("The enemy takes 70 damage, and has " + str(enemy2.life) + " life remaining.")
+
