@@ -269,20 +269,24 @@ class GameEnemy:
         else:
             print(self.name + " is still in the fight.")
 
-# Instantiate game characters and enemies
-player1 = GameCharacter("Roger", 100)
-player2 = GameCharacter("Betty", 100)
-enemy1 = GameEnemy("Bill", 150)
-enemy2 = GameEnemy("Bob", 150)
+def attack_enemy(enemy, damage):
+    print(player.name + " attacks!")
+    enemy.life -= damage
+    print(enemy.name + " takes " + str(damage) + " damage, and has " + str(enemy.life) + " life remaining.")
+    enemy.life_check()
+
+def attack_player(player, damage):
+    print(player.name + " attacks!")
+    enemy.life -= damage
+    print(enemy.name + " takes " + str(damage) + " damage, and has " + str(enemy.life) + " life remaining.")
+    enemy.life_check()
 
 # Example usage
-player1.attack()
-enemy1.life -= 50
-enemy1.life_check()  # Check enemy1's life status
-print("The enemy takes 50 damage, and has " + str(enemy1.life) + " life remaining.")
+player = GameCharacter("Mario", 100)
+enemy = GameEnemy("Bowser", 150)
 
-player2.attack()
-enemy2.life -= 70
-enemy2.life_check()  # Check enemy2's life status
-print("The enemy takes 70 damage, and has " + str(enemy2.life) + " life remaining.")
-
+attack_enemy(enemy, 60)
+attack_player(player, 60)
+attack_enemy(enemy, 40)
+attack_player(player, 40)
+attack_enemy(enemy, 50)
