@@ -266,4 +266,8 @@ enemy2 = GameEnemy("Bob", 150)
 # Example usage
 player1.attack()
 enemy1.life -= 50
+print("The enemy takes 50 damage, and has " + str(enemy1.life) + " life remaining.")
 
+player2.attack()
+enemy2.life -= 70
+print("The enemy takes 70 damage, and has " + str(enemy2.life) + " life remaining.")
