@@ -282,11 +282,13 @@ def attack_player(player, damage):
     enemy.life_check()
 
 # Example usage
-player = GameCharacter("Mario", 100)
-enemy = GameEnemy("Bowser", 150)
+player = GameCharacter("Mario", 120)
+enemy = GameEnemy("Bowser", 160)
 
 attack_enemy(enemy, 60)
 attack_player(player, 60)
 attack_enemy(enemy, 40)
 attack_player(player, 40)
 attack_enemy(enemy, 50)
+attack_player(player, 10)
+
