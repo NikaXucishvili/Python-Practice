@@ -292,3 +292,4 @@ attack_player(player, 40)
 attack_enemy(enemy, 50)
 attack_player(player, 10)
 
+print("mario game")
