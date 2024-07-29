@@ -294,3 +294,4 @@ attack_player(player, 10)
 
 print("mario game")
 print("mario vs bowser")
+print("mario won")
