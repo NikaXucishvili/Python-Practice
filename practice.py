@@ -241,26 +241,4 @@ app.run(debug=True)
 """
 
 
-class GameCharacter:
-   def  __init__(self, name, life):
-       self.name = name
-       self.name = life
-
-class Player(GameCharacter):
-   def attack(self):
-       print(self.name + " kicks the enemy.")
-
-class Enemy(GameCharacter):
-   def attack(self):
-       print(self.name + " breathers fire!")
-
-player1 = Player("mario", 100)
-enemy1 = Enemy("bowser", 150)
-
-print(player1.name)
-print(player1.life)
-print(enemy1.name)
-print(enemy1.life)
-
-player1.attack()
-enemy1.attack()
+print("THIS IS END OF PRACTICE PYTHON")
