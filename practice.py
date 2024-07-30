@@ -240,58 +240,27 @@ def html_page():
 app.run(debug=True)
 """
 
+
 class GameCharacter:
-    def __init__(self, name, life):
-        self.name = name
-        self.life = life
-    
-    def attack(self):
-        print(self.name + " kicks the enemy.")
-    
-    def life_check(self):
-        if self.life <= 0:
-            print(self.name + " was defeated!")
-        else:
-            print(self.name + " is still in the fight.")
+   def  __init__(self, name, life):
+       self.name = name
+       self.name = life
 
+class Player(GameCharacter):
+   def attack(self):
+       print(self.name + " kicks the enemy.")
 
-class GameEnemy:
-    def __init__(self, name, life):
-        self.name = name
-        self.life = life
-    
-    def attack(self):
-        print(self.name + " attacks the heroes!")
-    
-    def life_check(self):
-        if self.life <= 0:
-            print(self.name + " was defeated!")
-        else:
-            print(self.name + " is still in the fight.")
+class Enemy(GameCharacter):
+   def attack(self):
+       print(self.name + " breathers fire!")
 
-def attack_enemy(enemy, damage):
-    print(player.name + " attacks!")
-    enemy.life -= damage
-    print(enemy.name + " takes " + str(damage) + " damage, and has " + str(enemy.life) + " life remaining.")
-    enemy.life_check()
+player1 = Player("mario", 100)
+enemy1 = Enemy("bowser", 150)
 
-def attack_player(player, damage):
-    print(player.name + " attacks!")
-    enemy.life -= damage
-    print(enemy.name + " takes " + str(damage) + " damage, and has " + str(enemy.life) + " life remaining.")
-    enemy.life_check()
+print(player1.name)
+print(player1.life)
+print(enemy1.name)
+print(enemy1.life)
 
-# Example usage
-player = GameCharacter("Mario", 120)
-enemy = GameEnemy("Bowser", 160)
-
-attack_enemy(enemy, 60)
-attack_player(player, 60)
-attack_enemy(enemy, 40)
-attack_player(player, 40)
-attack_enemy(enemy, 50)
-attack_player(player, 10)
-
-print("mario game")
-print("mario vs bowser")
-print("mario won")
+player1.attack()
+enemy1.attack()
